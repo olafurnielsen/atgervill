@@ -14,7 +14,7 @@ Ef eitt mikilvægt atriði breytist eða verður órökstutt er niðurstaðan ek
 
 ## Endurtekning
 
-1. Notið `profanir/corpus.jsonl` í kóðahirslu verkefnisins sem inntak; prófunargögnin fylgja ekki skill-möppunni sjálfri. Hver færsla skráir samhengi, stillingu, uppruna, réttindastöðu, merkingaratriði og nákvæma strengi sem þarf að varðveita.
+1. Notið `profanir/corpus.jsonl` í kóðahirslu verkefnisins sem inntak; prófunargögnin eru ekki í möppunni `yfirlestur/`. Hver færsla skráir samhengi, stillingu, uppruna, réttindastöðu, merkingaratriði og nákvæma strengi sem þarf að varðveita.
 2. Látið líkan yfirfara textann með SKILL.md og viðeigandi tilvísunum, án aðgangs að fyrri úttökum/mati. Skráið líkan, dagsetningu og keyrsluskilyrði eftir því sem þau eru þekkt; ekki giska á útgáfunúmer eða slembifræ.
 3. Geymið raunúttak aðskilið frá inntaki og metið samkvæmt viðmiðum að ofan. Geymdu úttökin í `profanir/nidurstodur.jsonl` eru ritstjórnarumferð sama líkans og samdi dæmin; þau eru ekki blind eða óháð prófun.
 4. Keyrið `profanir/verify.py` á pörunum (`--results <skrá>` fyrir nýja keyrslu). Það athugar tölutákn og skilgreinda verndaða strengi og sýnir meðvitað gallaðar samanburðarútgáfur. Það skilur ekki merkingu: m.a. geta óbreytt orð fengið nýtt gildissvið.
