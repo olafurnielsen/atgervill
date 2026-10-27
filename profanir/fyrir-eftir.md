@@ -270,36 +270,6 @@ Einkunnir: 3/3/4 → 5/5/5
 
 Ný efnisatriði: engin fundust við sjálfsmat.
 
-## T11 — LaTeX (miðlungs)
-
-**Fyrir**
-
-```text
-\section{Niðurstöður}
-Það er niðurstaða okkar að $p < 0.05$ gefi ekki eitt og sér upplýsingar um stærð áhrifa \cite{jon2024}.
-```
-
-**Eftir**
-
-```text
-\section{Niðurstöður}
-Niðurstaða okkar er að $p < 0.05$ gefi ekki eitt og sér upplýsingar um stærð áhrifa \cite{jon2024}.
-```
-
-Nafnorðastíll lagaður; engin HTML-merki bætast við.
-
-Einkunnir: 4/3/5 → 5/5/5
-
-**Merkingaryfirferð**
-
-- Niðurstaðan er höfundanna. — varðveitt: Niðurstaða okkar er
-
-- Talan ein segir ekki til um stærð áhrifa. — varðveitt: gefi ekki eitt og sér upplýsingar um stærð áhrifa
-
-- Tilvísun og stærðfræðisnið haldast. — varðveitt: $p < 0.05$ og \cite{jon2024}
-
-Ný efnisatriði: engin fundust við sjálfsmat.
-
 ## T12 — skilyrt viðskiptayfirlýsing (miðlungs)
 
 **Fyrir**

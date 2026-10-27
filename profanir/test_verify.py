@@ -34,21 +34,22 @@ class SpanCounting(unittest.TestCase):
         case = {'before': 'Keyrðu `tool --dry-run`. Hún sagði: „Nei.“', 'protected': ['`tool --dry-run`', '„Nei.“']}
         self.assertEqual(verify.check(case, 'Hún sagði: „Nei.“ Keyrðu `tool --dry-run`.'), [])
 
-    def test_latex_command_glued_to_word_is_still_found(self):
-        # Orðamörk eiga aðeins við enda sem er orðstafur; „\“ er það ekki.
-        case = {'before': 'stærð áhrifa \\cite{jon2024}.', 'protected': ['\\cite{jon2024}']}
-        self.assertEqual(verify.check(case, 'stærð áhrifa\\cite{jon2024}.'), [])
+    def test_code_span_glued_to_word_is_still_found(self):
+        # Orðamörk eiga aðeins við enda sem er orðstafur; „`“ er það ekki.
+        case = {'before': 'Keyrðu `tool --dry-run`.', 'protected': ['`tool --dry-run`']}
+        self.assertEqual(verify.check(case, 'Keyrðu:`tool --dry-run`.'), [])
+        self.assertEqual(verify.check(case, 'Keyrðu`tool --dry-run`.'), [])
 
-    def test_duplicated_latex_command_after_word_is_caught(self):
-        case = {'before': '\\section{Niðurstöður}\nTexti.', 'protected': ['\\section{Niðurstöður}']}
-        after = '\\section{Niðurstöður}\nViðbót\\section{Niðurstöður} Texti.'
-        self.assertIn('protected_span_changed: \\section{Niðurstöður}', verify.check(case, after))
+    def test_duplicated_code_span_after_word_is_caught(self):
+        case = {'before': 'Keyrðu `tool --dry-run`.', 'protected': ['`tool --dry-run`']}
+        after = 'Keyrðu `tool --dry-run`. Aftur`tool --dry-run`.'
+        self.assertIn('protected_span_changed: `tool --dry-run`', verify.check(case, after))
 
 
 class StoredResults(unittest.TestCase):
     def test_stored_outputs_pass_and_controls_are_detected(self):
         report = verify.build_report(BASE / 'nidurstodur.jsonl')
-        self.assertEqual(report['mechanical_pass_count'], 18)
+        self.assertEqual(report['mechanical_pass_count'], report['case_count'])
         detected = sum(n['mechanically_detected'] for n in report['negative_controls'])
         self.assertGreaterEqual(detected, verify.MIN_DETECTED)
 

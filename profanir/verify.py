@@ -22,7 +22,7 @@ def numbers(text):
 
 def count_span(text,span):
     # Word boundary only at ends that are word characters: „ef“ must not be found
-    # inside „eftir“, but „\cite{x}“ still counts when glued to the preceding word.
+    # inside „eftir“, but a `code span` still counts when glued to the preceding word.
     start=r'(?<!\w)' if re.match(r'\w',span) else ''
     end=r'(?!\w)' if re.search(r'\w$',span) else ''
     return len(re.findall(start+re.escape(span)+end,text))

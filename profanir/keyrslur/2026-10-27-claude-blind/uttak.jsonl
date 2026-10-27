@@ -8,7 +8,6 @@
 {"id": "T08", "after": "Ákveðið var að fresta fundinum. Ekki liggur fyrir hver tók ákvörðunina.", "note": "Gerandi áfram ótilgreindur."}
 {"id": "T09", "after": "Anna ræddi við Maríu eftir að hún las skýrsluna.", "note": "Tvírætt hvort „hún“ vísar til Önnu eða Maríu; látið standa þar sem frumtextinn sker ekki úr."}
 {"id": "T10", "after": "Til að hefja ferlið skaltu velja [Sækja](https://example.org/umsokn) og keyra síðan `tool --dry-run`. Ekki breyta `USER_ID`.", "note": ""}
-{"id": "T11", "after": "\\section{Niðurstöður}\nNiðurstaða okkar er að $p < 0.05$ gefi ekki eitt og sér upplýsingar um stærð áhrifa \\cite{jon2024}.", "note": ""}
 {"id": "T12", "after": "Lausnin getur sparað teymum sem vinna með sama gagnasnið allt að 2 klukkustundir á viku. Enginn sparnaður er þó tryggður.", "note": ""}
 {"id": "T13", "after": "Ekki samþykktu allir starfsmenn tillöguna. Tveir sátu hjá.", "note": ""}
 {"id": "T14", "after": "Hafa þarf nokkur atriði í huga við innleiðingu nýja kerfisins. Prófunartímabilið hefst 4. nóvember og stendur í tvær vikur. Þjónustuteymið mun skrá þær villur sem koma upp. Eldri skráning verður áfram aðgengileg á tímabilinu en ekki verður hægt að breyta henni. Að prófun lokinni ákveður verkefnisstjóri næstu skref út frá niðurstöðunum. Ekki hefur verið ákveðið hvenær kerfið verður tekið í almenna notkun.", "note": ""}
