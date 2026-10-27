@@ -36,4 +36,4 @@ Varðveittu slóðir, tilvísanamerki, kóða og merkingarbær sniðmerki. Í Ma
 
 ## Prófun við breytingar á skill-inu
 
-Notaðu [matsaðferðina](references/mat.md). Fylgiskjölin í afhendingarpakkanum hafa prófunartexta, fyrir/eftir-pör og niðurstöður fyrstu yfirferðar. Þau eru tilbúin þróunardæmi, ekki óháð staðfesting á almennum árangri.
+Notaðu [matsaðferðina](references/mat.md). Prófunargögnin eru í `profanir/` í kóðahirslu verkefnisins, ekki í skill-möppunni: prófunartextar, fyrir/eftir-pör og niðurstöður fyrstu yfirferðar. Þau eru tilbúin þróunardæmi, ekki óháð staðfesting á almennum árangri.
