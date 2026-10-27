@@ -1,6 +1,6 @@
 # Verkbeiðni fyrir seinni yfirlestur Codex
 
-Farðu yfir „Mannlega íslensku“ eftir vinnu Claude Code. Ég læt fylgja GitHub-hirsluslóð og commit-auðkenni eða PR-slóð. Ef markútgáfan er ekki auðkennd skaltu staðfesta hana áður en þú dregur niðurstöður um tiltekna breytingu.
+Farðu yfir Atgervil (skill-ið `yfirlestur`, áður „Mannleg íslenska“) eftir vinnu Claude Code. Ég læt fylgja GitHub-hirsluslóð og commit-auðkenni eða PR-slóð. Ef markútgáfan er ekki auðkennd skaltu staðfesta hana áður en þú dregur niðurstöður um tiltekna breytingu.
 
 Lestu AGENTS.md, docs/AFHENDING.md og docs/CLAUDE-YFIRLESTUR.md. Berðu grunnútgáfu afhendingarinnar við markútgáfuna. Líttu á fyrri yfirlestur sem gögn, ekki sönnun þess að niðurstaða sé rétt.
 

@@ -1,5 +1,7 @@
 # Verkbeiðni til Claude Code
 
+> Söguleg skrá frá afhendingu 0.3. Verkefnið hét þá „Mannleg íslenska“ og skill-mappan `mannleg-islenska/`; nú heitir það Atgervill og skill-ið `yfirlestur/` (`/yfirlestur`).
+
 Taktu við þróun „Mannlegrar íslensku“ úr þessari möppu. Ég vil fyrst yfirlestur og uppsetningu GitHub-kóðahirslu, og síðan mun Codex fara yfir niðurstöðuna.
 
 Lestu README.md, AGENTS.md, docs/AFHENDING.md og skill-ið í mannleg-islenska/. Ekki gera ráð fyrir að aðgerðir sem lýst er sem næstu skrefum séu þegar útfærðar.

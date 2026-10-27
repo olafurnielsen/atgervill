@@ -5,7 +5,7 @@ Ný hegðunarkeyrsla á dæmunum 18. Úttakið er í `uttak.jsonl` (id, after, n
 ## Keyrsluskilyrði
 
 - Framkvæmd: Claude-undirfulltrúi (general-purpose) ræstur úr Claude Code-samtali. Aðalsamtalið keyrði á `claude-opus-5-5`; líkan undirfulltrúans er ekki staðfest sérstaklega. Hitastig og slembifræ ekki tiltæk.
-- Aðgangur: afrit af `mannleg-islenska/` og inntaksskrá í sérstakri bráðabirgðamöppu. Fyrirmæli bönnuðu lestur annarra mappa. Það var ekki tæknilega framfylgt, en í samtalsskrá sjást aðeins lestrar í bráðabirgðamöppunni (6 tólnotkanir).
+- Aðgangur: afrit af skill-möppunni (þá `mannleg-islenska/`, nú `yfirlestur/`) og inntaksskrá í sérstakri bráðabirgðamöppu. Fyrirmæli bönnuðu lestur annarra mappa. Það var ekki tæknilega framfylgt, en í samtalsskrá sjást aðeins lestrar í bráðabirgðamöppunni (6 tólnotkanir).
 - Inntak: `id`, `genre`, `mode`, `prompt`, `before` úr `corpus.jsonl`. Merkingaratriði (`invariants`) og verndaðir strengir (`protected`) voru fjarlægð.
 - Skill-ið var lesið sem skrár, ekki hlaðið gegnum skill-kerfi Claude Code. Hleðsla er óprófuð.
 

@@ -1,14 +1,16 @@
 # Mannleg íslenska — afhending 0.3
 
+> Söguleg skrá frá afhendingu 0.3. Verkefnið hét þá „Mannleg íslenska“ og skill-mappan `mannleg-islenska/`; nú heitir það Atgervill og skill-ið `yfirlestur/` (`/yfirlestur`).
+
 27. október 2026
 
 Tilbúinn er skill-pakki með **miðlungs ritstjórnarlega yfirferð sem sjálfgefna stillingu**. Hann á að bæta skýrleika og eðlilegt mál án þess að breyta merkingu, rödd eða málsniði. Létt og ítarleg yfirferð eru valkostir. Engar fullyrðingar eru gerðar um að greina höfund eða komast hjá gervigreindargreinum.
 
 ## Afhent
 
-- [SKILL.md](../mannleg-islenska/SKILL.md): virkjun, stillingar, vinnuferli og merkingartryggð.
-- [Ritstjórnarreglur](../mannleg-islenska/references/reglur.md): 12 afmörkuð viðmið og frumsamin dæmi; málreglur aðgreindar frá stílvali.
-- [Heimildir](../mannleg-islenska/references/heimildir.md): hlutverk heimilda, aðgangsstaða og takmörk endurnotkunar.
+- [SKILL.md](../yfirlestur/SKILL.md): virkjun, stillingar, vinnuferli og merkingartryggð.
+- [Ritstjórnarreglur](../yfirlestur/references/reglur.md): 12 afmörkuð viðmið og frumsamin dæmi; málreglur aðgreindar frá stílvali.
+- [Heimildir](../yfirlestur/references/heimildir.md): hlutverk heimilda, aðgangsstaða og takmörk endurnotkunar.
 - [Prófunarsafn og réttindaskráning](../profanir/UPPRUNI-OG-NOTKUN.md): 18 frumsamin dæmi með uppruna fyrir hverja færslu.
 - [Fyrir/eftir og merkingarmat](../profanir/fyrir-eftir.md): öll úttök og rök fyrir breytingum.
 - [Vélræn niðurstaða](../profanir/velraent-mat.json) og [endurkeyranleg próf](../profanir/verify.py).
@@ -46,7 +48,7 @@ Verkefnið getur haldið áfram án frekari ákvarðana notanda. Áður en fully
 
 ## Viðbót í útgáfu 0.2
 
-Lokið var við textasókn fyrir báðar heimildir sem höfðu aðeins verið lesnar í leitarútdráttum. Heimildaskrá og regla R9 voru uppfærðar. [Sóknarskrá](../mannleg-islenska/references/heimildasokn.json) geymir lýsigögn og efnisfingraför, ekki heimildatexta. Prófunarpör og sjálfsmat eru óbreytt frá fyrstu umferð; þessi viðbót er heimildastaðfesting en ekki ný hegðunarprófun líkans.
+Lokið var við textasókn fyrir báðar heimildir sem höfðu aðeins verið lesnar í leitarútdráttum. Heimildaskrá og regla R9 voru uppfærðar. [Sóknarskrá](../yfirlestur/references/heimildasokn.json) geymir lýsigögn og efnisfingraför, ekki heimildatexta. Prófunarpör og sjálfsmat eru óbreytt frá fyrstu umferð; þessi viðbót er heimildastaðfesting en ekki ný hegðunarprófun líkans.
 
 ## Viðbót í útgáfu 0.3
 

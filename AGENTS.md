@@ -1,4 +1,4 @@
-# Vinna við Mannlega íslensku
+# Atgervill: vinnureglur
 
 - Lestu `docs/AFHENDING.md` áður en þú breytir verkefninu. Greindu framkvæmdar breytingar frá tillögum og óprófaðri virkni.
 - Sjálfgefin ritstjórnarstilling er miðlungs. Varðveittu merkingu, rödd, fyrirvara, neitanir, skyldu/heimild, tölur og tilvitnanir. Ekki setja markmið um tiltekið breytingahlutfall eða styttingu.

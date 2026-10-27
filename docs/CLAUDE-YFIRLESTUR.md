@@ -1,4 +1,4 @@
-# Yfirlestur Claude Code á Mannlegri íslensku 0.3
+# Atgervill: yfirlestur Claude Code á útgáfu 0.3
 
 27. október 2026. Yfirlestur og lagfæringar: Claude Code (`claude-opus-5-5`). Þetta er annað líkanamat, ekki óháð mat íslensks ritstjóra.
 
@@ -7,6 +7,7 @@
 | | |
 |---|---|
 | Hirsla | https://github.com/olafurnielsen/atgervill |
+| Nafn | Atgervill; skill-ið `yfirlestur` (`/yfirlestur`). Hét „Mannleg íslenska“ til og með 0.3; endurnefnt að ósk notanda. |
 | Sýnileiki | Opinber (`PUBLIC`). Verkbeiðnin gerði ráð fyrir lokaðri hirslu; notandi staðfesti opinberan sýnileika 27. október 2026. |
 | Leyfi | Ekkert. Ekki valið af Claude. |
 | Grunncommit | `4848b92` á `main`: afhending Codex óbreytt, staðfest gegn `SHA256SUMS.txt` |
@@ -29,7 +30,7 @@
 
 ### A3 — Málvillur í ritstjórnarreglunum (miðlungs; lagfært)
 
-- Staður: `mannleg-islenska/references/reglur.md`.
+- Staður: `yfirlestur/references/reglur.md`.
 - „Stirð nafnorðastíll“ → „Stirður nafnorðastíll“ (stíll er karlkyns). R11 „Halda tölum …“ → „Haltu tölum …“, í samræmi við boðhátt annarra reglna.
 - Áhrif: Málvilla í dæmi sem líkanið á að læra af.
 

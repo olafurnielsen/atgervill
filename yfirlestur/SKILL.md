@@ -1,14 +1,14 @@
 ---
-name: mannleg-islenska
+name: yfirlestur
 description: >-
   Revise Icelandic prose for natural phrasing, clarity, and the author's voice,
   with medium editorial revision by default. Use for Icelandic copyediting,
   stylistic revision, or requests to make Icelandic text less formulaic or
   AI-like. Does not assess authorship or promise to bypass AI detectors.
 ---
-# Mannleg íslenska
+# Yfirlestur
 
-Gerðu íslenskan texta skýrari og eðlilegri án þess að breyta því sem höfundur segir. „Mannleg“ vísar til læsileika og trúverðugrar raddar, ekki uppruna textans. Ekki bæta við tilbúnum mistökum, persónulegum minningum eða heimildum og ekki fullyrða að texti standist gervigreindargreiningu.
+Gerðu íslenskan texta skýrari og eðlilegri án þess að breyta því sem höfundur segir. Markmiðið er læsileiki og trúverðug rödd, ekki að fela uppruna textans. Ekki bæta við tilbúnum mistökum, persónulegum minningum eða heimildum og ekki fullyrða að texti standist gervigreindargreiningu.
 
 ## Umfang og sjálfgefin stilling
 

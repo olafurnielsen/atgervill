@@ -1,5 +1,7 @@
 # Afhending til Claude Code
 
+> Söguleg skrá frá afhendingu 0.3. Verkefnið hét þá „Mannleg íslenska“ og skill-mappan `mannleg-islenska/`; nú heitir það Atgervill og skill-ið `yfirlestur/` (`/yfirlestur`).
+
 Dagsetning: 27. október 2026. Grunnútgáfa: 0.3.
 
 ## Tilgangur og ákvarðanir notanda

@@ -1,4 +1,6 @@
-# Mannleg íslenska
+# Atgervill
+
+Skill-ið heitir `yfirlestur` og er kallað fram með `/yfirlestur` í Claude Code. Verkefnið hét „Mannleg íslenska“ til og með útgáfu 0.3; sögulegu skjölin í `docs/` nota það nafn.
 
 Íslenskt ritstjórnar-skill með miðlungs yfirferð sem sjálfgefna stillingu. Markmiðið er skýrara og eðlilegra mál með varðveittri merkingu og rödd höfundar. Þetta er þróunarútgáfa 0.3, ekki óháð gæðastaðfest vara.
 
@@ -6,12 +8,12 @@
 
 1. Lestu [verkefnastöðu og afhendingu](docs/AFHENDING.md).
 2. Notaðu [verkbeiðnina fyrir Claude Code](docs/CLAUDE-CODE-VERKBEIDNI.md) fyrir yfirlestur og stofnun GitHub-kóðahirslu.
-3. Skoðaðu [SKILL.md](mannleg-islenska/SKILL.md) og keyrðu prófið hér fyrir neðan.
+3. Skoðaðu [SKILL.md](yfirlestur/SKILL.md) og keyrðu prófið hér fyrir neðan.
 4. Skilaðu síðar hirsluslóð og nákvæmu commit-auðkenni til Codex með [verkbeiðni fyrir enduryfirlestur](docs/CODEX-YFIRLESTUR.md).
 
 ## Skipulag
 
-- `mannleg-islenska/`: sjálfstæð skill-mappa; reglur, heimildir og lýsigögn.
+- `yfirlestur/`: sjálfstæð skill-mappa; reglur, heimildir og lýsigögn.
 - `profanir/`: 18 tilbúin þróunardæmi, fyrri úttök, sjálfsmat og vélræn próf.
 - `docs/`: staða, verkbeiðnir, upphafleg skýrsla og [yfirlestur Claude Code](docs/CLAUDE-YFIRLESTUR.md).
 - `AGENTS.md`: sameiginleg viðmið við vinnu í kóðahirslu.
@@ -31,10 +33,10 @@ python3 -m unittest discover -s profanir
 
 ## Uppsetning
 
-Skill-ið er ekki sjálfvirkt sett upp með því að afþjappa möppunni. Claude Code þarf að staðfesta viðeigandi staðsetningu og hleðslu skills samkvæmt því umhverfi sem er í notkun. Varðveitið `mannleg-islenska/` sem sameiginlega frumútgáfu; ekki láta afrit fyrir ólík verkfæri reka í sundur.
+Skill-ið er ekki sjálfvirkt sett upp með því að afþjappa möppunni. Í Claude Code verður `/yfirlestur` tiltækt þegar mappan liggur í `~/.claude/skills/yfirlestur/` (öll verkefni) eða `.claude/skills/yfirlestur/` (eitt verkefni), t.d. sem tákntengill: `ln -s "$PWD/yfirlestur" ~/.claude/skills/yfirlestur`. Hleðsla hefur ekki verið prófuð. Varðveitið `yfirlestur/` sem sameiginlega frumútgáfu; ekki láta afrit fyrir ólík verkfæri reka í sundur.
 
 `agents/openai.yaml` er lýsigagnaskrá fyrir viðeigandi OpenAI-umhverfi, ekki forsenda ritstjórnarreglnanna. Ekki gera ráð fyrir að önnur verkfæri lesi hana. Engin einkavefþjónusta, API-lykill eða tiltekin vefviðbót er nauðsynleg forsenda skillsins.
 
 ## Réttindi og uppruni
 
-Sjá [upprunaskrá prófunarsafns](profanir/UPPRUNI-OG-NOTKUN.md) og [heimildir](mannleg-islenska/references/heimildir.md). Heimildatextar eru ekki endurbirtir í pakkanum. Notandi hefur ekki valið opið hugbúnaðarleyfi; ekki bæta slíku við að eigin frumkvæði eða merkja verkefnið sem opinn hugbúnað án ákvörðunar hans.
+Sjá [upprunaskrá prófunarsafns](profanir/UPPRUNI-OG-NOTKUN.md) og [heimildir](yfirlestur/references/heimildir.md). Heimildatextar eru ekki endurbirtir í pakkanum. Notandi hefur ekki valið opið hugbúnaðarleyfi; ekki bæta slíku við að eigin frumkvæði eða merkja verkefnið sem opinn hugbúnað án ákvörðunar hans.
