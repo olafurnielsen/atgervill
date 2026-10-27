@@ -9,4 +9,4 @@
 - Keyrðu `python3 profanir/verify.py` eftir viðeigandi breytingar. Tilgreindu takmörk þess; ekki segjast hafa keyrt líkan með þessu prófi.
 - Þegar notandi velur breytingar skal aðeins innleiða samþykktar tillögur. Þetta ferli er næsta þróunarverkefni, ekki tilbúinn eiginleiki í 0.3.
 - Notaðu hlutfallslega tengla í skjölum kóðahirslunnar. Geymdu ekki einkaslóðir, lykla, staðbundnar vinnuskrár eða afrit vefsíðna þar.
-- Stofnun og birting kóðahirslu fer eftir verkbeiðni notanda. Ekki giska á eiganda eða setja opið leyfi; varðveittu sérstaklega val um sýnileika.
+- Verkefnið er undir MIT-leyfi (`LICENSE`) og hirslan er opinber, hvort tveggja að ákvörðun notanda. Ekki breyta leyfi eða sýnileika án hans ákvörðunar.

@@ -9,7 +9,7 @@
 | Hirsla | https://github.com/olafurnielsen/atgervill |
 | Nafn | Atgervill; skill-ið `yfirlestur` (`/yfirlestur`). Hét „Mannleg íslenska“ til og með 0.3; endurnefnt að ósk notanda. |
 | Sýnileiki | Opinber (`PUBLIC`). Verkbeiðnin gerði ráð fyrir lokaðri hirslu; notandi staðfesti opinberan sýnileika 27. október 2026. |
-| Leyfi | Ekkert. Ekki valið af Claude. |
+| Leyfi | MIT (`LICENSE`), valið af notanda 27. október 2026. |
 | Grunncommit | `4848b92` á `main`: afhending Codex óbreytt, staðfest gegn `SHA256SUMS.txt` |
 | Vinnugrein | `claude-yfirlestur`; lokacommit og PR-slóð koma fram í PR-lýsingu |
 
@@ -88,7 +88,7 @@ Skjölin aðgreina sjálfsmat, vélræn próf og óháð mat á skýran hátt. V
 
 ## Eftirstandandi verkefni
 
-1. Ákvörðun notanda um leyfi. Opinber hirsla án leyfis þýðir að aðrir mega skoða en ekki endurnýta.
+1. Leyfi: leyst; notandi valdi MIT.
 2. Uppsetningar- og hleðslupróf skills í Claude Code og Codex (A9).
 3. Tillögur A5–A8.
 4. Uppflettiferli (málið.is, Stafsetningarorðabók, BÍN). Ekki hafið.

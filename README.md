@@ -39,4 +39,6 @@ Skill-ið er ekki sjálfvirkt sett upp með því að afþjappa möppunni. Í Cl
 
 ## Réttindi og uppruni
 
-Sjá [upprunaskrá prófunarsafns](profanir/UPPRUNI-OG-NOTKUN.md) og [heimildir](yfirlestur/references/heimildir.md). Heimildatextar eru ekki endurbirtir í pakkanum. Notandi hefur ekki valið opið hugbúnaðarleyfi; ekki bæta slíku við að eigin frumkvæði eða merkja verkefnið sem opinn hugbúnað án ákvörðunar hans.
+Sjá [upprunaskrá prófunarsafns](profanir/UPPRUNI-OG-NOTKUN.md) og [heimildir](yfirlestur/references/heimildir.md). Heimildatextar eru ekki endurbirtir í pakkanum.
+
+Verkefnið er gefið út undir [MIT-leyfi](LICENSE). Leyfið nær til efnis sem nýtur höfundarréttar; óvíst er hvort efni sem líkan samdi (t.d. prófunardæmin) geri það. Það veitir engan rétt til heimildanna sem vísað er í.

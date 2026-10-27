@@ -6,7 +6,7 @@
 
 Hver færsla í corpus.jsonl hefur eigin provenance-reit með höfundi, dagsetningu, upprunategund og grundvelli notkunar. Öll dæmin eru nýsamin fyrir verkefnið; ekkert er flutt inn úr veftextum og ekkert endurbirtingarleyfi þriðja aðila er því lagt til grundvallar. Aðgangur að opinni vefsíðu var ekki túlkaður sem leyfi til að afrita efnið.
 
-Pakkinn er afhentur notandanum til notkunar, breytinga og prófana í verkefninu. Þetta er upprunaskráning, ekki fullyrðing um höfundarréttarstöðu vélmyndaðs efnis eða leyfi til heimildavefjanna. Engin CC- eða önnur þriðja aðila leyfismerking er sett á þá.
+Pakkinn er afhentur notandanum til notkunar, breytinga og prófana í verkefninu. Þetta er upprunaskráning, ekki fullyrðing um höfundarréttarstöðu vélmyndaðs efnis eða leyfi til heimildavefjanna. Engin CC- eða önnur þriðja aðila leyfismerking er sett á þá. Kóðahirslan í heild er undir [MIT-leyfi](../LICENSE); það nær aðeins til efnis sem nýtur höfundarréttar og breytir engu um heimildavefina.
 
 Reglur skillsins eru sjálfstæð samantekt. Skoðuð heimildadæmi voru ekki tekin í safnið. Fyrri samtalssvör birtust aðeins sem tilvísanamerki og engin ósýnileg viðhengi voru notuð. Beiðnir notandans staðfestu tilgang og sjálfgefna stillingu.
 
