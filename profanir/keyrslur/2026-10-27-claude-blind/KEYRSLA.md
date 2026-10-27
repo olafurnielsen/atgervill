@@ -27,7 +27,8 @@ Ný hegðunarkeyrsla á dæmunum 18. Úttakið er í `uttak.jsonl` (id, after, n
 |---|---|
 | T06, T08, T09, T11, T13, T18 | Í samræmi við væntingar; T09 merkt tvírætt, T18 tilvitnun óhreyfð. |
 | T17 | Jákvætt viðmið sem átti að standa óbreytt var sameinað í eina setningu („… fær kvöldálag en annað starfsfólk ekki“). Merking helst, en þetta er óþörf breyting. |
-| T15 (létt) | „framkvæma yfirferð á drögunum“ → „fara yfir drögin“. Má telja staðbundna lagfæringu, en er á mörkum léttrar yfirferðar; fyrri úttak lét það standa. |
+| T15 (létt) | „framkvæma yfirferð á drögunum“ → „fara yfir drögin“. Má telja staðbundna lagfæringu, en er á mörkum léttrar yfirferðar; fyrra úttak lét það standa. |
 | T16 (ítarleg) | Varðveitti „við“-rödd og „Skráning fer fram“; fyrra úttak breytti í „þú“-ávarp og fyrirmæli. |
 | T05, T14 | Hófsamari en fyrri úttök; T14 heldur innganginum „nokkur atriði“ í styttri mynd. |
+| T02 | **Óljóst.** „svo hægt sé að taka umsókn þína til afgreiðslu“ → „svo hægt sé að afgreiða umsókn þína“. Fyrra orðalagið getur vísað til þess að hefja meðferð, hið síðara til þess að ljúka henni. Skýrsla 0.3 nefnir einmitt þennan greinarmun. Claude missti af þessu í fyrsta mati; Codex benti á það í seinni yfirlestri. Úttakið er óbreytt. |
 | Önnur | Engin merkingarbreyting fannst. |
