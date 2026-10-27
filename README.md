@@ -13,10 +13,10 @@
 
 - `mannleg-islenska/`: sjálfstæð skill-mappa; reglur, heimildir og lýsigögn.
 - `profanir/`: 18 tilbúin þróunardæmi, fyrri úttök, sjálfsmat og vélræn próf.
-- `docs/`: staða, verkbeiðnir og upphafleg skýrsla.
+- `docs/`: staða, verkbeiðnir, upphafleg skýrsla og [yfirlestur Claude Code](docs/CLAUDE-YFIRLESTUR.md).
 - `AGENTS.md`: sameiginleg viðmið við vinnu í kóðahirslu.
 - `CLAUDE.md`: inngangur fyrir Claude Code.
-- `SHA256SUMS.txt`: fingraför afhendingarskráa, ekki ný niðurstaða mats.
+- `SHA256SUMS.txt`: fingraför afhendingarskráa 0.3 eins og Codex skilaði þeim (grunncommit `4848b92`), ekki ný niðurstaða mats. Breyttar skrár standast þau ekki lengur.
 
 ## Keyra núverandi próf
 
@@ -24,9 +24,10 @@ Frá rót þessarar möppu:
 
 ```sh
 python3 profanir/verify.py
+python3 -m unittest discover -s profanir
 ```
 
-Þarf Python 3 og aðeins staðalsafnið. Prófið endurskrifar `profanir/velraent-mat.json`. Vænt niðurstaða við afhendingu: 18/18 varðveislupróf standast; 5/7 vísvitandi gallaðar útgáfur greinast vélrænt. Prófið keyrir ekki líkan og staðfestir ekki merkingarjafngildi.
+Þarf Python 3 og aðeins staðalsafnið. Prófið prentar niðurstöðuna; `--write` endurskrifar `profanir/velraent-mat.json` og `--results <skrá>` athugar aðra keyrslu (sjá `profanir/keyrslur/`). Vænt niðurstaða: 18/18 varðveislupróf standast; 5/7 vísvitandi gallaðar útgáfur greinast vélrænt, og prófið fellur ef færri greinast. Verndaðir strengir eru taldir sem heil orð. Prófið keyrir ekki líkan og staðfestir ekki merkingarjafngildi.
 
 ## Uppsetning
 
