@@ -1,6 +1,6 @@
 {
   "name": "atgervill",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Yfirlestur á íslenskum texta sem gerir hann skýrari og eðlilegri en varðveitir merkingu og rödd höfundar.",
   "author": {
     "name": "Olafur Nielsen"
@@ -8,6 +8,13 @@
   "homepage": "https://github.com/olafurnielsen/atgervill",
   "repository": "https://github.com/olafurnielsen/atgervill",
   "license": "MIT",
-  "keywords": ["íslenska", "icelandic", "yfirlestur", "copyediting"],
-  "skills": ["./yfirlestur"]
+  "keywords": [
+    "íslenska",
+    "icelandic",
+    "yfirlestur",
+    "copyediting"
+  ],
+  "skills": [
+    "./yfirlestur"
+  ]
 }

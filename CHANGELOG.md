@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0](https://github.com/olafurnielsen/atgervill/compare/v0.4.0...v0.5.0) (2026-10-27)
+
+
+### Features
+
+* attach yfirlestur.zip to each release ([c4d731f](https://github.com/olafurnielsen/atgervill/commit/c4d731fd28e0b43020d820eac25956898eaee2f1))
+* install as a plugin in Claude Code, Codex and ChatGPT ([c4d731f](https://github.com/olafurnielsen/atgervill/commit/c4d731fd28e0b43020d820eac25956898eaee2f1))
+
 ## [0.4.0](https://github.com/olafurnielsen/atgervill/compare/v0.3.0...v0.4.0) (2026-10-27)
 
 
