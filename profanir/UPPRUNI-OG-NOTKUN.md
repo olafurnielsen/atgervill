@@ -16,10 +16,11 @@ Reglur skillsins eru sjálfstæð samantekt. Skoðuð heimildadæmi voru ekki te
 - nidurstodur.jsonl: raunveruleg ritstjórnarúttök þessarar umferðar, athugasemdir og sjálfsmat fyrir/eftir.
 - fyrir-eftir.md: læsilegur samanburður allra texta ásamt 47 merkingarathugunum.
 - neikvaed-vidmid.json: sjö vísvitandi spillt dæmi, ekki villur úr keyrslu annars líkans.
-- verify.py: endurkeyranleg próf á tölutáknum og vernduðum strengjum; þarf aðeins Python 3 staðalsafnið.
+- verify.py: endurkeyranleg próf á tölutáknum og vernduðum strengjum (talin sem heil orð); þarf aðeins Python 3 staðalsafnið. test_verify.py prófar sjálft prófið.
 - velraent-mat.json: útprentuð niðurstaða prófanna og samantekt sjálfsmatseinkunna.
+- keyrslur/: síðari hegðunarkeyrslur, hver í eigin möppu með keyrsluskilyrðum. Þær breyta ekki fyrri úttökum.
 
-Keyrið `python3 verify.py` úr þessari möppu (eða gefið fulla slóð). Það endurmetur geymdu pörin og skrifar velraent-mat.json. Það kallar ekki á líkan og getur ekki staðfest merkingarjafngildi. Nýtt líkan þarf að fá corpus.jsonl ásamt skill-inu, en án fyrirliggjandi svara, til að framkvæma nýja endurskrift.
+Keyrið `python3 verify.py` úr þessari möppu (eða gefið fulla slóð). Það endurmetur geymdu pörin og prentar niðurstöðuna; `--write` skrifar velraent-mat.json og `--results <skrá>` athugar aðra keyrslu. Það kallar ekki á líkan og getur ekki staðfest merkingarjafngildi. Nýtt líkan þarf að fá corpus.jsonl ásamt skill-inu, en án fyrirliggjandi svara, til að framkvæma nýja endurskrift.
 
 ## Umfang
 
