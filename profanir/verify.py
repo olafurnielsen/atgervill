@@ -21,8 +21,11 @@ def numbers(text):
     return Counter(re.findall(r'\d+(?:[.,]\d+)*',text))
 
 def count_span(text,span):
-    # Whole-word match: „ef“ must not be found inside „eftir“, nor „má“ inside „mál“.
-    return len(re.findall(r'(?<!\w)'+re.escape(span)+r'(?!\w)',text))
+    # Word boundary only at ends that are word characters: „ef“ must not be found
+    # inside „eftir“, but „\cite{x}“ still counts when glued to the preceding word.
+    start=r'(?<!\w)' if re.match(r'\w',span) else ''
+    end=r'(?!\w)' if re.search(r'\w$',span) else ''
+    return len(re.findall(start+re.escape(span)+end,text))
 
 def check(case,after):
     errors=[]
@@ -61,6 +64,8 @@ def main(argv=None):
     ap.add_argument('--results',default=str(base/'nidurstodur.jsonl'),help='JSONL with id and after per case')
     ap.add_argument('--write',action='store_true',help='rewrite velraent-mat.json (only for the stored 0.3 results)')
     args=ap.parse_args(argv)
+    if args.write and Path(args.results).resolve()!=(base/'nidurstodur.jsonl').resolve():
+        ap.error('--write only applies to the stored 0.3 results; it would overwrite velraent-mat.json')
     report=build_report(args.results)
     if args.write:
         (base/'velraent-mat.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

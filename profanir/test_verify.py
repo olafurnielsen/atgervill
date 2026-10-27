@@ -34,6 +34,16 @@ class SpanCounting(unittest.TestCase):
         case = {'before': 'Keyrðu `tool --dry-run`. Hún sagði: „Nei.“', 'protected': ['`tool --dry-run`', '„Nei.“']}
         self.assertEqual(verify.check(case, 'Hún sagði: „Nei.“ Keyrðu `tool --dry-run`.'), [])
 
+    def test_latex_command_glued_to_word_is_still_found(self):
+        # Orðamörk eiga aðeins við enda sem er orðstafur; „\“ er það ekki.
+        case = {'before': 'stærð áhrifa \\cite{jon2024}.', 'protected': ['\\cite{jon2024}']}
+        self.assertEqual(verify.check(case, 'stærð áhrifa\\cite{jon2024}.'), [])
+
+    def test_duplicated_latex_command_after_word_is_caught(self):
+        case = {'before': '\\section{Niðurstöður}\nTexti.', 'protected': ['\\section{Niðurstöður}']}
+        after = '\\section{Niðurstöður}\nViðbót\\section{Niðurstöður} Texti.'
+        self.assertIn('protected_span_changed: \\section{Niðurstöður}', verify.check(case, after))
+
 
 class StoredResults(unittest.TestCase):
     def test_stored_outputs_pass_and_controls_are_detected(self):
@@ -46,6 +56,14 @@ class StoredResults(unittest.TestCase):
         target = BASE / 'velraent-mat.json'
         before = target.stat().st_mtime_ns
         subprocess.run([sys.executable, str(BASE / 'verify.py')], check=True, capture_output=True)
+        self.assertEqual(target.stat().st_mtime_ns, before)
+
+    def test_write_is_refused_for_other_results(self):
+        target = BASE / 'velraent-mat.json'
+        before = target.stat().st_mtime_ns
+        run = subprocess.run([sys.executable, str(BASE / 'verify.py'), '--write', '--results',
+                              str(BASE / 'keyrslur/2026-10-27-claude-blind/uttak.jsonl')], capture_output=True)
+        self.assertEqual(run.returncode, 2)
         self.assertEqual(target.stat().st_mtime_ns, before)
 
 
