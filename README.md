@@ -1,12 +1,14 @@
 # Atgervill
 
-Atgervill er viðbót fyrir Claude Code sem les yfir íslenskan texta. Hún gerir textann skýrari og eðlilegri án þess að breyta því sem höfundur segir: neitanir, fyrirvarar, skyldur og heimildir, tölur, gerendur og tilvitnanir haldast. Merking og rödd höfundar ganga fyrir stílfegurð.
+Atgervill er viðbót sem les yfir íslenskan texta, fyrir Claude Code, Codex, ChatGPT og claude.ai. Hún gerir textann skýrari og eðlilegri án þess að breyta því sem höfundur segir: neitanir, fyrirvarar, skyldur og heimildir, tölur, gerendur og tilvitnanir haldast. Merking og rödd höfundar ganga fyrir stílfegurð.
 
 Viðbótin metur ekki hvort texti sé vélskrifaður og lofar engu um gervigreindargreina.
 
 Þetta er þróunarútgáfa. Hegðunin hefur aðeins verið prófuð á litlu, tilbúnu dæmasafni og ekki verið metin af óháðum íslenskum ritstjóra.
 
 ## Uppsetning
+
+### Claude Code
 
 Í Claude Code (2.1.275 eða nýrri) dugar ein skipun:
 
@@ -31,9 +33,31 @@ claude plugin install atgervill@atgervill
 
 Viðbótin verður virk í næstu lotu, eða strax eftir `/reload-plugins`. Nýjar útgáfur sækir `claude plugin update atgervill`.
 
+### Codex
+
+Codex les sama viðbótasafn:
+
+```sh
+codex plugin marketplace add olafurnielsen/atgervill
+codex plugin add atgervill@atgervill
+```
+
+Nýjar útgáfur sækir `codex plugin marketplace upgrade`. Einnig má biðja Codex að setja viðbótina upp.
+
+### ChatGPT
+
+Í ChatGPT eru viðbætur af þessu tagi í boði á Business-, Enterprise-, Healthcare- og Edu-áskriftum. Tvær leiðir eru færar:
+
+- **Fyrir einn notanda:** sæktu `yfirlestur.zip` af [nýjustu útgáfunni](https://github.com/olafurnielsen/atgervill/releases/latest) og hladdu henni upp undir **Plugins → Skills → Create → Upload from your computer**.
+- **Fyrir vinnusvæði:** stjórnandi flytur inn `https://github.com/olafurnielsen/atgervill` undir **Plugins → Add → Import marketplace** í Admin Console. ChatGPT samstillir viðbótina daglega eftir það.
+
+### claude.ai og Claude Desktop
+
+Sæktu `yfirlestur.zip` af [nýjustu útgáfunni](https://github.com/olafurnielsen/atgervill/releases/latest) og hladdu henni upp í stillingunum.
+
 ## Notkun
 
-Kallaðu viðbótina fram með `/atgervill:yfirlestur` og textanum, eða biddu Claude einfaldlega að lesa íslenskan texta yfir. Viðbótin skilar endurskoðuðum texta og stuttum athugasemdum um efnislegan vafa. Fyrir/eftir-samanburð eða breytingalista má biðja um sérstaklega.
+Í Claude Code má kalla viðbótina fram með `/atgervill:yfirlestur` og textanum. Alls staðar má einfaldlega biðja um yfirlestur á íslenskum texta. Viðbótin skilar endurskoðuðum texta og stuttum athugasemdum um efnislegan vafa. Fyrir/eftir-samanburð eða breytingalista má biðja um sérstaklega.
 
 Þrjár stillingar eru í boði:
 
