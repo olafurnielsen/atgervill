@@ -37,6 +37,10 @@ Skill-ið er ekki sjálfvirkt sett upp með því að afþjappa möppunni. Í Cl
 
 `agents/openai.yaml` er lýsigagnaskrá fyrir viðeigandi OpenAI-umhverfi, ekki forsenda ritstjórnarreglnanna. Ekki gera ráð fyrir að önnur verkfæri lesi hana. Engin einkavefþjónusta, API-lykill eða tiltekin vefviðbót er nauðsynleg forsenda skillsins.
 
+## Útgáfur
+
+Útgáfum er stýrt með [release-please](https://github.com/googleapis/release-please). Commit-skilaboð fylgja [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:` o.s.frv.). Eftir hverja sameiningu í `main` uppfærir release-please útgáfu-PR með `CHANGELOG.md` og `version.txt`. Útgáfa og tag (`vX.Y.Z`) verða til þegar sá PR er sameinaður. Fyrir 1.0 hækkar `feat:` minni útgáfutöluna (0.3 → 0.4) og `fix:` plásturstöluna.
+
 ## Réttindi og uppruni
 
 Sjá [upprunaskrá prófunarsafns](profanir/UPPRUNI-OG-NOTKUN.md) og [heimildir](yfirlestur/references/heimildir.md). Heimildatextar eru ekki endurbirtir í pakkanum.
