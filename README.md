@@ -1,48 +1,49 @@
 # Atgervill
 
-Skill-ið heitir `yfirlestur` og er kallað fram með `/yfirlestur` í Claude Code. Verkefnið hét „Mannleg íslenska“ til og með útgáfu 0.3; sögulegu skjölin í `docs/` nota það nafn.
+Ritstjórnar-skill fyrir íslenskan texta. Það gerir texta skýrari og eðlilegri án þess að breyta því sem höfundur segir: neitanir, fyrirvarar, skyldur og heimildir, tölur, gerendur og tilvitnanir haldast. Merking og rödd höfundar ganga fyrir stílfegurð.
 
-Íslenskt ritstjórnar-skill með miðlungs yfirferð sem sjálfgefna stillingu. Markmiðið er skýrara og eðlilegra mál með varðveittri merkingu og rödd höfundar. Þetta er þróunarútgáfa 0.3, ekki óháð gæðastaðfest vara.
+Skill-ið heitir `yfirlestur` og er kallað fram með `/yfirlestur` í Claude Code. Það metur ekki hvort texti sé vélskrifaður og lofar engu um gervigreindargreina.
 
-## Byrja hér
+Þetta er þróunarútgáfa. Hegðunin hefur aðeins verið prófuð á litlu, tilbúnu dæmasafni og ekki verið metin af óháðum íslenskum ritstjóra.
 
-1. Lestu [verkefnastöðu og afhendingu](docs/AFHENDING.md).
-2. Notaðu [verkbeiðnina fyrir Claude Code](docs/CLAUDE-CODE-VERKBEIDNI.md) fyrir yfirlestur og stofnun GitHub-kóðahirslu.
-3. Skoðaðu [SKILL.md](yfirlestur/SKILL.md) og keyrðu prófið hér fyrir neðan.
-4. Skilaðu síðar hirsluslóð og nákvæmu commit-auðkenni til Codex með [verkbeiðni fyrir enduryfirlestur](docs/CODEX-YFIRLESTUR.md).
+## Stillingar
+
+- **Miðlungs** (sjálfgefin): leiðréttir málfar, losar um stirðar setningar, fellir brott innihaldslausar endurtekningar og lagar röð innan efnisgreina.
+- **Létt:** leiðréttingar og staðbundnar lagfæringar; setningaskipan helst að mestu.
+- **Ítarleg:** endurskipuleggur efnisgreinar og framsetningu eftir þörfum, með sömu kröfum um merkingartryggð.
+
+Skill-ið skilar hreinum, endurskoðuðum texta og stuttum athugasemdum um efnislegan vafa. Fyrir/eftir-samanburð eða breytingalista má biðja um sérstaklega.
+
+## Uppsetning
+
+Í Claude Code verður `/yfirlestur` tiltækt þegar mappan liggur í `~/.claude/skills/yfirlestur/` (öll verkefni) eða `.claude/skills/yfirlestur/` (eitt verkefni), til dæmis sem tákntengill:
+
+```sh
+ln -s "$PWD/yfirlestur" ~/.claude/skills/yfirlestur
+```
+
+`yfirlestur/agents/openai.yaml` geymir lýsigögn fyrir Codex. Skill-ið krefst hvorki tiltekinnar vefþjónustu, API-lykils né viðbótar; uppflettingar nota þann vefaðgang sem er tiltækur.
 
 ## Skipulag
 
-- `yfirlestur/`: sjálfstæð skill-mappa; reglur, heimildir og lýsigögn.
-- `profanir/`: 18 tilbúin þróunardæmi, fyrri úttök, sjálfsmat og vélræn próf.
-- `docs/`: staða, verkbeiðnir, upphafleg skýrsla og [yfirlestur Claude Code](docs/CLAUDE-YFIRLESTUR.md).
-- `AGENTS.md`: sameiginleg viðmið við vinnu í kóðahirslu.
-- `CLAUDE.md`: inngangur fyrir Claude Code.
-- `SHA256SUMS.txt`: fingraför afhendingarskráa 0.3 eins og Codex skilaði þeim (grunncommit `4848b92`), ekki ný niðurstaða mats. Breyttar skrár standast þau ekki lengur.
+- `yfirlestur/`: skill-ið sjálft. [SKILL.md](yfirlestur/SKILL.md), [ritstjórnarreglur](yfirlestur/references/reglur.md), [heimildir](yfirlestur/references/heimildir.md) og [matsaðferð](yfirlestur/references/mat.md).
+- `profanir/`: 17 tilbúin dæmi, geymd úttök, vélræn varðveislupróf og síðari keyrslur. Sjá [uppruna og notkun](profanir/UPPRUNI-OG-NOTKUN.md).
 
-## Keyra núverandi próf
-
-Frá rót þessarar möppu:
+## Próf
 
 ```sh
 python3 profanir/verify.py
 python3 -m unittest discover -s profanir
 ```
 
-Þarf Python 3 og aðeins staðalsafnið. Prófið prentar niðurstöðuna; `--write` endurskrifar `profanir/velraent-mat.json` og `--results <skrá>` athugar aðra keyrslu (sjá `profanir/keyrslur/`). Vænt niðurstaða: 18/18 varðveislupróf standast; 5/7 vísvitandi gallaðar útgáfur greinast vélrænt, og prófið fellur ef færri greinast. Verndaðir strengir eru taldir sem heil orð. Prófið keyrir ekki líkan og staðfestir ekki merkingarjafngildi.
+Þarf aðeins Python 3. `verify.py` athugar tölutákn og verndaða strengi í geymdum úttökum og hvort vísvitandi spillt dæmi greinist. Vænt niðurstaða: 17/17 standast og 5/7 spilltra dæma greinast; prófið fellur ef færri greinast. `--results <skrá>` athugar aðra keyrslu og `--write` uppfærir `profanir/velraent-mat.json`.
 
-## Uppsetning
-
-Skill-ið er ekki sjálfvirkt sett upp með því að afþjappa möppunni. Í Claude Code verður `/yfirlestur` tiltækt þegar mappan liggur í `~/.claude/skills/yfirlestur/` (öll verkefni) eða `.claude/skills/yfirlestur/` (eitt verkefni), t.d. sem tákntengill: `ln -s "$PWD/yfirlestur" ~/.claude/skills/yfirlestur`. Hleðsla hefur ekki verið prófuð. Varðveitið `yfirlestur/` sem sameiginlega frumútgáfu; ekki láta afrit fyrir ólík verkfæri reka í sundur.
-
-`agents/openai.yaml` er lýsigagnaskrá fyrir viðeigandi OpenAI-umhverfi, ekki forsenda ritstjórnarreglnanna. Ekki gera ráð fyrir að önnur verkfæri lesi hana. Engin einkavefþjónusta, API-lykill eða tiltekin vefviðbót er nauðsynleg forsenda skillsins.
+Prófið keyrir ekki líkan og staðfestir ekki merkingarjafngildi. Það missir meðal annars af „ekki allir“ → „enginn“ og tilbúnum geranda þegar aðrir verndaðir strengir haldast.
 
 ## Útgáfur
 
-Útgáfum er stýrt með [release-please](https://github.com/googleapis/release-please). Commit-skilaboð fylgja [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:` o.s.frv.). Eftir hverja sameiningu í `main` uppfærir release-please útgáfu-PR með `CHANGELOG.md` og `version.txt`. Útgáfa og tag (`vX.Y.Z`) verða til þegar sá PR er sameinaður. Fyrir 1.0 hækkar `feat:` minni útgáfutöluna (0.3 → 0.4) og `fix:` plásturstöluna.
+Útgáfum er stýrt með [release-please](https://github.com/googleapis/release-please). Commit-skilaboð fylgja [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:` o.s.frv.). Eftir hverja sameiningu í `main` uppfærir release-please útgáfu-PR með `CHANGELOG.md` og `version.txt`. Útgáfa og tag (`vX.Y.Z`) verða til þegar sá PR er sameinaður. Fyrir 1.0 hækkar `feat:` minni útgáfutöluna og `fix:` plásturstöluna.
 
-## Réttindi og uppruni
+## Leyfi og réttindi
 
-Sjá [upprunaskrá prófunarsafns](profanir/UPPRUNI-OG-NOTKUN.md) og [heimildir](yfirlestur/references/heimildir.md). Heimildatextar eru ekki endurbirtir í pakkanum.
-
-Verkefnið er gefið út undir [MIT-leyfi](LICENSE). Leyfið nær til efnis sem nýtur höfundarréttar; óvíst er hvort efni sem líkan samdi (t.d. prófunardæmin) geri það. Það veitir engan rétt til heimildanna sem vísað er í.
+[MIT](LICENSE). Leyfið nær til efnis sem nýtur höfundarréttar; óvíst er hvort vélsamið efni, til dæmis prófunardæmin, geri það. Heimildatextar eru ekki endurbirtir og leyfið veitir engan rétt til heimildanna sem vísað er í.
