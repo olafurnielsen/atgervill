@@ -1,0 +1,6 @@
+interface:
+  display_name: "Yfirlestur"
+  short_description: "Eðlilegri íslenska með ritstjórnarlegri yfirferð"
+  default_prompt: "Notaðu $yfirlestur til að yfirfara textann með miðlungs ritstjórnarlegum breytingum og varðveita merkingu og rödd."
+policy:
+  allow_implicit_invocation: true

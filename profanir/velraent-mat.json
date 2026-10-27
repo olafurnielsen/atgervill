@@ -1,8 +1,8 @@
 {
   "date": "2026-10-27",
-  "case_count": 18,
-  "invariant_count": 47,
-  "mechanical_pass_count": 18,
+  "case_count": 17,
+  "invariant_count": 44,
+  "mechanical_pass_count": 17,
   "checks": [
     {
       "id": "T01",
@@ -51,11 +51,6 @@
     },
     {
       "id": "T10",
-      "errors": [],
-      "semantic_review": "recorded self-review; not verified by script"
-    },
-    {
-      "id": "T11",
       "errors": [],
       "semantic_review": "recorded self-review; not verified by script"
     },
@@ -161,16 +156,16 @@
   ],
   "subjective_self_review_means": {
     "clarity": {
-      "before": 3.61,
-      "after": 4.78
+      "before": 3.59,
+      "after": 4.76
     },
     "naturalness": {
-      "before": 3.28,
-      "after": 4.83
+      "before": 3.29,
+      "after": 4.82
     },
     "voice": {
-      "before": 4.56,
-      "after": 4.89
+      "before": 4.53,
+      "after": 4.88
     }
   },
   "limitations": "Checks do not establish semantic equivalence. Negative controls are deliberately seeded; outputs and scores were authored by the same assistant."

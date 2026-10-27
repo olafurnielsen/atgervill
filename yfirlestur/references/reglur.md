@@ -14,12 +14,12 @@ Merkingar: **M** = mál-/ritregla studd heimild; **S** = staðbundin stílviðmi
 | R8 | Fylgdu viðeigandi rithætti og greinarmerkjum. | T.d. íslensk gæsalappamerki utan tilvitnunar þegar snið leyfir. Kommusetning getur breytt afmörkun hóps; ekki setja kommur sjálfkrafa um allar tilvísunarsetningar. | M, H1 kaflar 21 og 28 |
 | R9 | Athugaðu beygingu og samræmi í setningu. | BÍN hjálpar með orðmyndir. Lesið einnig orðflokk og notkunarathugasemdir; leitarniðurstaða ein staðfestir ekki viðeigandi rithátt. Safnið úrskurðar ekki eitt og sér um alla setningagerð, merkingu eða stíl. | M, H3 |
 | R10 | Varðveittu rödd og lögmæt tilbrigði. | Ekki gera öll erindi formleg, bæta við slangri eða þurrka út persónulegt orðalag. Ávarp og kynjuð orð mega ekki breyta viðtakendahópi. | V/S, eigin regla |
-| R11 | Halda tölum, tíma og umfangi nákvæmu. | 10 prósentustig eru ekki 10 prósent. „Fyrir“ er ekki alltaf það sama og „eigi síðar en“. Ekki reikna afleiddar tölur inn án beiðni. | V, eigin regla |
+| R11 | Haltu tölum, tíma og umfangi nákvæmu. | 10 prósentustig eru ekki 10 prósent. „Fyrir“ er ekki alltaf það sama og „eigi síðar en“. Ekki reikna afleiddar tölur inn án beiðni. | V, eigin regla |
 | R12 | Varðveittu heimildastöðu og afmörkuð svæði. | „Samkvæmt skýrslunni“ má ekki hverfa ef fullyrðingin verður þá fullyrðing höfundar. Tilvitnanir, slóðir og kóði standa. | V, eigin regla |
 
 ## Dæmi samin fyrir þetta skill
 
-- Stirð nafnorðastíll: „Við munum framkvæma mat á tillögunni.“ → „Við munum meta tillöguna.“ Framtíð helst.
+- Stirður nafnorðastíll: „Við munum framkvæma mat á tillögunni.“ → „Við munum meta tillöguna.“ Framtíð helst.
 - Fyrirvari: „Niðurstöðurnar gætu bent til breytinga.“ → Láttu standa ef ekkert samhengi kallar á lagfæringu. Ekki „Niðurstöðurnar sýna breytingar“.
 - Óþekktur gerandi: „Ákveðið var að fresta fundinum.“ → Ekki „Stjórnin frestaði fundinum“ nema stjórnin sé nefnd sem gerandi.
 - Kunnuglegt mál: „Takk fyrir hjálpina. Þetta reddaðist.“ → Getur staðið óbreytt í persónulegum skilaboðum.
