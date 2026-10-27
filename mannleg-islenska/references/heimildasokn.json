@@ -1,0 +1,24 @@
+[
+  {
+    "source_id": "H2",
+    "retrieved_date": "2026-10-27",
+    "url": "https://island.is/handbaekur/handbok-efnisstefnunnar/efni-sem-notendur-skilja",
+    "resolved_url": "https://island.is/handbaekur/handbok-efnisstefnunnar/efni-sem-notendur-skilja",
+    "status_code": 200,
+    "title": "Handbók efnisstefnunnar  - A.2. Efni sem notendur skilja | Ísland.is",
+    "markdown_sha256": "0536b6edc424e4f50190826b58e5d27604ac937f156b66b78a9b2cc1a14a4430",
+    "review": "Fetched main text read by assistant; embedded images not visually inspected.",
+    "redistributed_source_text": false
+  },
+  {
+    "source_id": "H3",
+    "retrieved_date": "2026-10-27",
+    "url": "https://bin.arnastofnun.is/forsida/umleit/",
+    "resolved_url": "https://bin.arnastofnun.is/forsida/umleit/",
+    "status_code": 200,
+    "title": "Beygingarlýsing íslensks nútímamáls | Leitað í BÍN",
+    "markdown_sha256": "5db4cf7025e66c17d039601818e1775d8d500ee8a65c79bb7a02348929ac6741",
+    "review": "Fetched main text read by assistant; embedded images not visually inspected.",
+    "redistributed_source_text": false
+  }
+]

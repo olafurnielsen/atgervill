@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-27",
+  "case_count": 18,
+  "invariant_count": 47,
+  "mechanical_pass_count": 18,
+  "checks": [
+    {
+      "id": "T01",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T02",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T03",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T04",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T05",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T06",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T07",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T08",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T09",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T10",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T11",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T12",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T13",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T14",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T15",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T16",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T17",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    },
+    {
+      "id": "T18",
+      "errors": [],
+      "semantic_review": "recorded self-review; not verified by script"
+    }
+  ],
+  "negative_controls": [
+    {
+      "id": "N1",
+      "mechanically_detected": true,
+      "errors": [
+        "protected_span_changed: gæti",
+        "protected_span_changed: ekki"
+      ],
+      "semantic_self_review": "reject",
+      "reason": "Óvissa og neitun orsakasambands hverfa."
+    },
+    {
+      "id": "N2",
+      "mechanically_detected": true,
+      "errors": [
+        "protected_span_changed: má",
+        "protected_span_changed: skal"
+      ],
+      "semantic_self_review": "reject",
+      "reason": "Heimild verður skylda."
+    },
+    {
+      "id": "N3",
+      "mechanically_detected": true,
+      "errors": [
+        "protected_span_changed: 10 prósentustig"
+      ],
+      "semantic_self_review": "reject",
+      "reason": "Röng mælieining þótt allar tölur haldist."
+    },
+    {
+      "id": "N4",
+      "mechanically_detected": true,
+      "errors": [
+        "protected_span_changed: „Ég get ekki lofað að verkinu ljúki í maí.“"
+      ],
+      "semantic_self_review": "reject",
+      "reason": "Tilvitnun breytt og neitun felld brott."
+    },
+    {
+      "id": "N5",
+      "mechanically_detected": false,
+      "errors": [],
+      "semantic_self_review": "reject",
+      "reason": "Ekki allir breytt í enginn. Strengjaprófið eitt grípur þetta ekki."
+    },
+    {
+      "id": "N6",
+      "mechanically_detected": true,
+      "errors": [
+        "numeric_tokens_changed",
+        "protected_span_changed: allt að 2 klukkustundir á viku"
+      ],
+      "semantic_self_review": "reject",
+      "reason": "Hámarki sparnaðar breytt."
+    },
+    {
+      "id": "N7",
+      "mechanically_detected": false,
+      "errors": [],
+      "semantic_self_review": "reject",
+      "reason": "Gerandi búinn til; mótsögn. Strengjaprófið eitt grípur þetta ekki."
+    }
+  ],
+  "subjective_self_review_means": {
+    "clarity": {
+      "before": 3.61,
+      "after": 4.78
+    },
+    "naturalness": {
+      "before": 3.28,
+      "after": 4.83
+    },
+    "voice": {
+      "before": 4.56,
+      "after": 4.89
+    }
+  },
+  "limitations": "Checks do not establish semantic equivalence. Negative controls are deliberately seeded; outputs and scores were authored by the same assistant."
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "N1",
+    "case": "T03",
+    "candidate": "Niðurstöðurnar sýna að breytingin styttir biðtíma.",
+    "expected": "reject",
+    "reason": "Óvissa og neitun orsakasambands hverfa."
+  },
+  {
+    "id": "N2",
+    "case": "T04",
+    "candidate": "Leigjandi skal óska eftir framlengingu ef umsókn berst fyrir 1. desember. Leigusali skal svara innan 10 daga.",
+    "expected": "reject",
+    "reason": "Heimild verður skylda."
+  },
+  {
+    "id": "N3",
+    "case": "T05",
+    "candidate": "Þátttaka jókst úr 20% í 30%, eða um 10 prósent. Aukningin nemur 50% miðað við fyrra hlutfall.",
+    "expected": "reject",
+    "reason": "Röng mælieining þótt allar tölur haldist."
+  },
+  {
+    "id": "N4",
+    "case": "T07",
+    "candidate": "Eftir fundinn sagði Elín í yfirlýsingu sinni: „Ég get lofað að verkinu ljúki í maí.“",
+    "expected": "reject",
+    "reason": "Tilvitnun breytt og neitun felld brott."
+  },
+  {
+    "id": "N5",
+    "case": "T13",
+    "candidate": "Enginn starfsmaður samþykkti tillöguna. Tveir sátu hjá.",
+    "expected": "reject",
+    "reason": "Ekki allir breytt í enginn. Strengjaprófið eitt grípur þetta ekki."
+  },
+  {
+    "id": "N6",
+    "case": "T12",
+    "candidate": "Lausnin getur sparað teymum allt að 3 klukkustundir á viku ef þau vinna með sama gagnasnið. Enginn sparnaður er tryggður.",
+    "expected": "reject",
+    "reason": "Hámarki sparnaðar breytt."
+  },
+  {
+    "id": "N7",
+    "case": "T08",
+    "candidate": "Stjórnin ákvað að fresta fundinum. Ekki liggur fyrir hver tók ákvörðunina.",
+    "expected": "reject",
+    "reason": "Gerandi búinn til; mótsögn. Strengjaprófið eitt grípur þetta ekki."
+  }
+]
