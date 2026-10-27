@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootstrap-sha": "4848b9205ff02d24c4f28bf5c9a95c226dd3e2d6",
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "package-name": "mannleg-islenska",
+      "include-component-in-tag": false,
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": false,
+      "changelog-path": "CHANGELOG.md"
+    }
+  }
+}
