@@ -5,9 +5,9 @@ Hegðunarkeyrsla á dæmunum 17. Úttakið er í `uttak.jsonl` (id, after, note)
 ## Keyrsluskilyrði
 
 - Líkan: Claude (Anthropic), keyrt sem undirfulltrúi í Claude Code. Nákvæm líkanaútgáfa, hitastig og slembifræ eru ekki staðfest.
-- Aðgangur: afrit af skill-möppunni og inntaksskrá í sérstakri möppu. Líkanið las aðeins SKILL.md, `references/reglur.md` og inntakið.
+- Aðgangur: afrit af möppunni `yfirlestur/` og inntaksskrá í sérstakri möppu. Líkanið las aðeins SKILL.md, `references/reglur.md` og inntakið.
 - Inntak: `id`, `genre`, `mode`, `prompt` og `before` úr `corpus.jsonl`. Merkingaratriði (`invariants`) og verndaðir strengir (`protected`) voru fjarlægð.
-- Skill-ið var lesið sem skrár, ekki hlaðið gegnum skill-kerfi.
+- Viðbótin var lesin sem skrár, ekki hlaðin sem viðbót í Claude Code.
 
 ## Takmörk
 

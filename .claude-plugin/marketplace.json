@@ -1,0 +1,14 @@
+{
+  "name": "atgervill",
+  "description": "Viðbætur fyrir íslenskan texta",
+  "owner": {
+    "name": "Olafur Nielsen"
+  },
+  "plugins": [
+    {
+      "name": "atgervill",
+      "source": "./",
+      "description": "Yfirlestur á íslenskum texta sem gerir hann skýrari og eðlilegri en varðveitir merkingu og rödd höfundar."
+    }
+  ]
+}

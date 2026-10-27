@@ -6,7 +6,7 @@
 
 Hver færsla í `corpus.jsonl` hefur eigin `provenance`-reit með höfundi, dagsetningu, upprunategund og grundvelli notkunar. Öll dæmin eru nýsamin fyrir verkefnið; ekkert er flutt inn úr veftextum og ekkert endurbirtingarleyfi þriðja aðila er því lagt til grundvallar. Aðgangur að opinni vefsíðu var ekki túlkaður sem leyfi til að afrita efnið.
 
-Verkefnið er undir [MIT-leyfi](../LICENSE). Það nær aðeins til efnis sem nýtur höfundarréttar; óvíst er hvort vélsamið efni geri það. Leyfið veitir engan rétt til heimildavefjanna sem vísað er í. Reglur skillsins eru sjálfstæð samantekt og skoðuð heimildadæmi voru ekki tekin í safnið.
+Verkefnið er undir [MIT-leyfi](../LICENSE). Það nær aðeins til efnis sem nýtur höfundarréttar; óvíst er hvort vélsamið efni geri það. Leyfið veitir engan rétt til heimildavefjanna sem vísað er í. Reglur viðbótarinnar eru sjálfstæð samantekt og skoðuð heimildadæmi voru ekki tekin í safnið.
 
 ## Skrár og keyrsla
 
@@ -18,7 +18,7 @@ Verkefnið er undir [MIT-leyfi](../LICENSE). Það nær aðeins til efnis sem n�
 - `velraent-mat.json`: niðurstaða prófanna og samantekt sjálfsmatseinkunna.
 - `keyrslur/`: síðari hegðunarkeyrslur, hver í eigin möppu með keyrsluskilyrðum. Þær breyta ekki fyrri úttökum.
 
-Keyrið `python3 verify.py` úr þessari möppu (eða gefið fulla slóð). Það endurmetur geymdu pörin og prentar niðurstöðuna; `--write` skrifar `velraent-mat.json` og `--results <skrá>` athugar aðra keyrslu. Það kallar ekki á líkan og getur ekki staðfest merkingarjafngildi. Ný keyrsla fær inntak úr `corpus.jsonl` ásamt skill-inu, en án fyrirliggjandi svara.
+Keyrið `python3 verify.py` úr þessari möppu (eða gefið fulla slóð). Það endurmetur geymdu pörin og prentar niðurstöðuna; `--write` skrifar `velraent-mat.json` og `--results <skrá>` athugar aðra keyrslu. Það kallar ekki á líkan og getur ekki staðfest merkingarjafngildi. Ný keyrsla fær inntak úr `corpus.jsonl` ásamt viðbótinni, en án fyrirliggjandi svara.
 
 ## Umfang
 

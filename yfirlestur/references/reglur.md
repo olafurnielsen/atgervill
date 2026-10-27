@@ -1,6 +1,6 @@
 # Ritstjórnarreglur
 
-Merkingar: **M** = mál-/ritregla studd heimild; **S** = staðbundin stílviðmiðun; **V** = varðveisluviðmið þessa skills. Heimildanúmer vísa í heimildir.md. Stílval er ekki sönnun um að texti sé vélskrifaður.
+Merkingar: **M** = mál-/ritregla studd heimild; **S** = staðbundin stílviðmiðun; **V** = varðveisluviðmið þessarar viðbótar. Heimildanúmer vísa í heimildir.md. Stílval er ekki sönnun um að texti sé vélskrifaður.
 
 | Nr. | Viðmið | Hvenær og takmörk | Stoð |
 |---|---|---|---|
@@ -17,7 +17,7 @@ Merkingar: **M** = mál-/ritregla studd heimild; **S** = staðbundin stílviðmi
 | R11 | Haltu tölum, tíma og umfangi nákvæmu. | 10 prósentustig eru ekki 10 prósent. „Fyrir“ er ekki alltaf það sama og „eigi síðar en“. Ekki reikna afleiddar tölur inn án beiðni. | V, eigin regla |
 | R12 | Varðveittu heimildastöðu og afmörkuð svæði. | „Samkvæmt skýrslunni“ má ekki hverfa ef fullyrðingin verður þá fullyrðing höfundar. Tilvitnanir, slóðir og kóði standa. | V, eigin regla |
 
-## Dæmi samin fyrir þetta skill
+## Dæmi samin fyrir þessa viðbót
 
 - Stirður nafnorðastíll: „Við munum framkvæma mat á tillögunni.“ → „Við munum meta tillöguna.“ Framtíð helst.
 - Fyrirvari: „Niðurstöðurnar gætu bent til breytinga.“ → Láttu standa ef ekkert samhengi kallar á lagfæringu. Ekki „Niðurstöðurnar sýna breytingar“.
